@@ -17,7 +17,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir: path.resolve(__dirname, "dist/"),
     emptyOutDir: true,
   },
+  base: process.env.VITE_BASE_PATH || "/pro-net-app",
 })
